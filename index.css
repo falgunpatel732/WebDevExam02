@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+.header{
+    background: black;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 6rem;
+    position: relative;
+}
+.header .logo .logo-name{
+    font-size: 3rem;
+    color: #fff;
+    margin: 7px 20px;
+    position: absolute;
+}
+.header .nav-icons a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .nav-icons a:hover{
+    color: green;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: rgb(14, 14, 14);
+    background: whitesmoke ;
+    cursor: pointer;
+    border: 0rem solid black;
+    border-radius: 5rem;
+    padding: .5rem 1.5rem;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    color: rgb(32, 32, 32);
+    text-transform: capitalize;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+
+.home{
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+    background: url('./pictures/bg.jpeg') no-repeat;
+    background-position: center;
+}
+.home .content{
+    max-width: 60rem;
+    margin: auto;
+}
+.home .content h3{
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: rgb(19, 18, 18);
+}
+
+
+/* why spotify section  */
+
+.games .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+
+.games .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: black;
+}
+
+.games .box-container .box img{
+    height: 10rem;
+}
+
+.games .box-container .box h3{
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.games .box-container .box .sub-head{
+    color: black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.con{
+    display: flex;
+    align-items: center;
+    background: url('./pictures/bg.jpeg') no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.con .cont{
+    width: 150rem;
+    height: 20rem;
+}
+.con .cont h3{
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: rgb(19, 18, 18);
+}
+
+/* footer css section  */
+.footers{
+    background: black;
+}
+
+.footers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+.footers .box-container .box h3{
+    font-size: 2.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+.footers .box-container .box h3:hover{
+    color: #ccc;
+    letter-spacing: .2rem;
+}
+.footers .box-container .box h3 i{
+    color: #ccc;   
+}
+.footers .box-container .box .links{
+    display: block ;
+    font-size: 1.5rem;
+    color: #ccc;
+    padding: 1rem 0;
+}
+.footers .box-container .box .links i{
+    color: #ccc;   
+    padding-right: .5rem;
+}
+.footers .box-container .box .links:hover i{
+   padding-right: 2rem;   
+}
+.footers .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: #ccc;
+    padding: 1rem 0;
+}
+.footers .box-container .box .share a{
+   height: 4rem;
+   width: 4rem;
+   line-height: 4rem;
+   border-radius: .5rem;
+   font-size: 2rem;
+   color: var(--black); 
+   margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+.footers .box-container .box .share a:hover{
+    background:var(--main--color);
+    color: #fff;
+}
